@@ -1,56 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Css Style Sheet -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Single Price Grid Component</title>
-  </head>
-  <body>
-    <div class="project">
-      <div class="top">
-        <h2>Join our community</h2>
-        <p>30-day, hassle-free money back guarantee</p>
-        <p>
-          Gain access to our full library of tutorials along with expert code
-          reviews. Perfect for any developers who are serious about honing their
-          skills.
-        </p>
-      </div>
-      <div class="bottom">
-        <div class="subscription">
-          <h3>Monthly Subscription</h3>
-          <p><span>&dollar;29</span> per month</p>
-          <p>Full access for less than &dollar;1 a day</p>
-          <button>Sign Up</button>
-        </div>
-
-        <div class="why">
-          <h3>Why Us</h3>
-          <p>
-            Tutorials by industry experts Peer &amp; expert code review Coding
-            exercises Access to our GitHub repos Community forum Flashcard decks
-            New videos every week
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive single price grid component built for a Frontend Mentor challenge.">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Single Price Grid Component | Frontend Mentor</title>
+</head>
+<body>
+  <main class="price-card">
+    <section class="intro">
+      <h1>Join our community</h1>
+      <p class="guarantee">30-day, hassle-free money back guarantee</p>
+      <p>Gain access to our full library of tutorials along with expert code reviews. Perfect for developers who are serious about honing their skills.</p>
+    </section>
+    <section class="subscription" aria-labelledby="subscription-title">
+      <h2 id="subscription-title">Monthly Subscription</h2>
+      <p class="price"><strong>$29</strong><span>per month</span></p>
+      <p>Full access for less than $1 a day</p>
+      <a class="cta" href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">Sign Up</a>
+    </section>
+    <section class="why" aria-labelledby="why-title">
+      <h2 id="why-title">Why Us</h2>
+      <ul><li>Tutorials by industry experts</li><li>Peer and expert code review</li><li>Coding exercises</li><li>Access to our GitHub repos</li><li>Community forum</li><li>Flashcard decks</li><li>New videos every week</li></ul>
+    </section>
+  </main>
+</body>
 </html>
